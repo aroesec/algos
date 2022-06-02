@@ -12,13 +12,15 @@ def sortedSquaredArray(array):
     squares.sort()
     return squares
 
-print(sortedSquaredArray(array))
+# print(sortedSquaredArray(array))
 
 
 def sortedSquaredArrayLogN(array):
     sortedSquares = [0 for _ in array]
     for idx in range((len(array))):
+        print(sortedSquares)
         value= array[idx]
+        print(value)
         sortedSquares[idx] = value * value
     sortedSquares.sort()
     return sortedSquares
